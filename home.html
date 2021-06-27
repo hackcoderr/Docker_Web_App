@@ -21,10 +21,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
     <title>Home</title>
 </head>
 
 <body>
+    <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-info fond">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -64,6 +66,41 @@
             </div>
         </div>
     </nav>
+    <!-- navbar end -->
+    <!-- carousel start -->
+    <div class="row">
+        <div class="column">
+            <img src="images/home.svg" alt="home" id="home" />
+        </div>
+        <div class="column">
+            <img src="images/docker.png" alt="docker" id="docker" />
+            <p class="fond quote">
+                Docker allow you to package an application with all of its dependencies into a standardized unit for software development.
+
+                <hr id="line">
+                <p id="developer">- by. Docker Developer</p>
+
+            </p>
+            <hr id="line2">
+
+        </div>
+    </div>
+
+    <!-- header start-->
+    <div class="card-header">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">
+                This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+            </p>
+            <hr class="my-4" />
+            <p>
+                It uses utility classes for typography and spacing to space content out within the larger container.
+            </p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn
+                    more</a>
+        </div>
+    </div>
 
 
     <!-- Bootstrap Bundle with Popper -->
@@ -75,7 +112,7 @@
         function addDarkmodeWidget() {
             new Darkmode().showWidget();
         }
-        window.addEventListener('load', addDarkmodeWidget);
+        window.addEventListener("load", addDarkmodeWidget);
     </script>
 </body>
 

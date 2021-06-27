@@ -1,6 +1,7 @@
 /* css for font */
 
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Cookie&family=Gentium+Basic:ital,wght@1,700&family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Cookie&family=Gentium+Basic:ital,wght@1,700&family=Kaushan+Script&display&family=Noto+Serif:wght@700&display=swap");
 .fond {
     font-family: "Acme", sans-serif;
 }
@@ -18,7 +19,7 @@ body {
 }
 
 
-/* test now */
+/* carousel start */
 
 * {
     box-sizing: border-box;
@@ -103,4 +104,61 @@ body {
 }
 
 
-/* testing end */
+/* carousel end */
+
+
+/* welcome msg start */
+
+.center {
+    align-items: center;
+    background-color: rgb(213, 212, 219);
+    height: 80px;
+}
+
+.button {
+    width: 98%;
+    display: inline-block;
+    height: 50px;
+    margin: 1%;
+    background-color: #17a7d3;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    color: rgb(213, 212, 219);
+    text-shadow: 1px 1px #ff5100;
+}
+
+div.slide-left {
+    width: 100%;
+    overflow: hidden;
+}
+
+div.slide-left h2 {
+    animation: slide-left 10s;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.button:hover {
+    background-color: darkslateblue;
+    color: rgb(0, 0, 0);
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* welcome msg end */

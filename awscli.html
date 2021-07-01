@@ -25,15 +25,19 @@
 </head>
 
 <body>
+    <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-info fond">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="images/dockerlogo.png" alt="" width="45" height="35" />
+                <img src="images/dockerlogo.png" alt=""  height="35" />
             </a>
             <a class="navbar-brand" id="hub" href="#">Hackcoderr's Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
+                    <li class="nav-item me-auto mb-2 mb-lg-0">
                         <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -54,6 +58,25 @@
                             <li><a class="dropdown-item" href="azurecli.html">Azure</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                K8S Cloud
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="k8sAWS.html">AWS</a></li>
+                            <li><a class="dropdown-item" href="k8sAzure.html">Azure</a></li>
+                            <li><a class="dropdown-item" href="k8sGCP.html">GCP</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                K8S Local
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ks8VM.html">VM</a></li>
+                            <li><a class="dropdown-item" href="k8sStack.html">Openstack</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -64,6 +87,7 @@
             </div>
         </div>
     </nav>
+    <!-- navbar end -->
 
 
 
